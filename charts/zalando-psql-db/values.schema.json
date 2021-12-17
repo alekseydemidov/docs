@@ -1,0 +1,133 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "service": {
+            "type": "object",
+            "required": ["name","team_id"],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "title": "Service name",
+                    "pattern": "^[a-z0-9-_]+$"
+                },
+                "team_id": {
+                    "type": "string",
+                    "title": "TeamID",
+                    "pattern": "^[a-z]+$" 
+                }
+            }
+        },
+        "postgresql": {
+            "type": "object",
+            "properties": {
+                "version": {
+                    "type": "integer",
+                    "default": 12,
+                    "title": "PSQL version: 9,10,11,12,13"
+                },
+                "replicas": {
+                    "type": "integer",
+                    "default": 1,
+                    "title": "Replica Count"
+                },
+                "databases": {
+                    "type": "array",
+                    "title": "Databases",
+                    "description": "A list of necessary DBs and users",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "title": "Database name",
+                                "pattern": "^[a-z0-9-_]+$"
+                            },
+                            "user": {
+                                "type": "string",
+                                "title": "Username",
+                                "pattern": "^[a-z]+$" 
+                            },
+                            "roles": {
+                                "type":"array",
+                                "title": "PSQL privileges",
+                                "items": {
+                                    "type":"string",
+                                    "pattern": "^(superuser|createdb|inherit|login|nologin|createrole|replication|bypassrls)$"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "volumes": {
+            "type": "object",
+            "properties": {
+                "size": {
+                    "type": "string",
+                    "default": 1,
+                    "title": "Persistent Volume Size",
+                    "form": true,
+                    "render": "slider",
+                    "sliderMin": 1,
+                    "sliderMax": 100,
+                    "sliderUnit": "Gi"
+                  }
+            }
+        },
+        "resources": {
+            "type": "object",
+            "title": "Required Resources",
+            "description": "Configure resource requests",
+            "form": true,
+            "properties": {
+                "requests": {
+                    "type": "object",
+                    "properties": {
+                    "memory_request": {
+                        "type": "string",
+                        "default": 256,
+                        "form": true,
+                        "render": "slider",
+                        "title": "Memory Request",
+                        "sliderMin": 512,
+                        "sliderMax": 65536,
+                        "sliderUnit": "Mi"
+                    },
+                    "cpu_request": {
+                        "type": "string",
+                        "default": 0.1,
+                        "form": true,
+                        "render": "slider",
+                        "title": "CPU Request",
+                        "sliderMin": 512,
+                        "sliderMax": 8000,
+                        "sliderUnit": "m"
+                    },
+                    "memory_limit": {
+                        "type": "string",
+                        "default": 256,
+                        "form": true,
+                        "render": "slider",
+                        "title": "Memory Request",
+                        "sliderMin": 512,
+                        "sliderMax": 65536,
+                        "sliderUnit": "Mi"
+                    },
+                    "cpu_limit": {
+                        "type": "string",
+                        "default": 0.1,
+                        "form": true,
+                        "render": "slider",
+                        "title": "CPU Request",
+                        "sliderMin": 512,
+                        "sliderMax": 8000,
+                        "sliderUnit": "m"
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
