@@ -1,1 +1,1 @@
-Static pages here
+Helm charts
