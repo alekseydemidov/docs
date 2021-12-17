@@ -8,5 +8,5 @@ entries:
       sources:
       - https://github.com/helm/helm
       urls:
-      - https://technosophos.github.io/docs/zalando-psql.tzg
+      - https://alekseydemidov.github.io/docs/zalando-psql.tzg
       version: 1.16.0
