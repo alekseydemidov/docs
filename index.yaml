@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  zalando-psql-db:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-12-17T13:07:55.826852936Z"
+    description: A Helm chart for Kubernetes
+    digest: 19bf0c06d41a30ce99efa5ec0ba114252e0023f53c74bbb03bddf2ba7fb8bdee
+    name: zalando-psql-db
+    type: application
+    urls:
+    - https://github.com/alekseydemidov/docs/releases/download/zalando-psql-db-0.1.1/zalando-psql-db-0.1.1.tgz
+    version: 0.1.1
+generated: "2021-12-17T13:07:55.624082436Z"
