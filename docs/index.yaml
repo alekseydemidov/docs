@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  zalando_pg:
+    - created: 2021-12-17T15:13:20.499814565-06:00
+      description: Deploy a postgresql DB
+      home: https://helm.sh/helm
+      name: zalando_postgres
+      sources:
+      - https://github.com/helm/helm
+      urls:
+      - https://technosophos.github.io/docs/zalando-psql.tzg
+      version: 1.16.0
