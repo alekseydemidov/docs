@@ -11,12 +11,12 @@ postgresql:
   replicas: 2
   databases:
   - name: database1
-    user: foo1
+    user: foo
     roles: 
     - superuser
     - createdb
   - name: database2
-    user: foo2
+    user: fee
     roles: 
     - superuser
     - createdb
@@ -25,7 +25,8 @@ volume:
   size: 1Gi
 
 resources:
-  cpu_request: 100m
-  cpu_limit: 200m
-  memory_request: 256Mi
+  cpu_request: 150m
+  cpu_limit: 250m
+  memory_request: 512Mi
   memory_limit: 512Mi
+
