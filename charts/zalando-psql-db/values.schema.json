@@ -65,8 +65,7 @@
             "type": "object",
             "properties": {
                 "size": {
-                    "type": "integer",
-                    "default": 1,
+                    "type": "string",
                     "title": "Persistent Volume Size",
                     "form": true,
                     "render": "slider",
@@ -86,8 +85,7 @@
                     "type": "object",
                     "properties": {
                     "memory_request": {
-                        "type": "integer",
-                        "default": 256,
+                        "type": "string",
                         "form": true,
                         "render": "slider",
                         "title": "Memory Request",
@@ -96,8 +94,7 @@
                         "sliderUnit": "Mi"
                     },
                     "cpu_request": {
-                        "type": "integer",
-                        "default": 0.1,
+                        "type": "string",
                         "form": true,
                         "render": "slider",
                         "title": "CPU Request",
@@ -106,8 +103,7 @@
                         "sliderUnit": "m"
                     },
                     "memory_limit": {
-                        "type": "integer",
-                        "default": 256,
+                        "type": "string",
                         "form": true,
                         "render": "slider",
                         "title": "Memory Request",
@@ -116,8 +112,7 @@
                         "sliderUnit": "Mi"
                     },
                     "cpu_limit": {
-                        "type": "integer",
-                        "default": 0.1,
+                        "type": "string",
                         "form": true,
                         "render": "slider",
                         "title": "CPU Request",
