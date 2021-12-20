@@ -66,6 +66,7 @@
             "properties": {
                 "size": {
                     "type": "string",
+                    "default": "1Gi",
                     "title": "Persistent Volume Size",
                     "form": true,
                     "render": "slider",
@@ -86,6 +87,7 @@
                     "properties": {
                     "memory_request": {
                         "type": "string",
+                        "default": "256Mi",
                         "form": true,
                         "render": "slider",
                         "title": "Memory Request",
@@ -95,6 +97,7 @@
                     },
                     "cpu_request": {
                         "type": "string",
+                        "default": "100m",
                         "form": true,
                         "render": "slider",
                         "title": "CPU Request",
@@ -104,6 +107,7 @@
                     },
                     "memory_limit": {
                         "type": "string",
+                        "default": "512Mi",
                         "form": true,
                         "render": "slider",
                         "title": "Memory Request",
@@ -113,6 +117,7 @@
                     },
                     "cpu_limit": {
                         "type": "string",
+                        "default": "500m",
                         "form": true,
                         "render": "slider",
                         "title": "CPU Request",
