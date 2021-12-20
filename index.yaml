@@ -3,6 +3,19 @@ entries:
   zalando-psql-db:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2021-12-20T14:57:54.491549414Z"
+    description: A Helm chart deployment Zalando Postgresql based on zalando-operator
+    digest: 2ab544e46cacfe1b889ac26fe43592ee930854cfe71ac5b38287ef13583c8c8a
+    keywords:
+    - database
+    - postgresql
+    name: zalando-psql-db
+    type: application
+    urls:
+    - https://github.com/alekseydemidov/docs/releases/download/zalando-psql-db-0.1.6/zalando-psql-db-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-12-20T09:13:38.354764078Z"
     description: A Helm chart deployment Zalando Postgresql based on zalando-operator
     digest: 771a8b7fd54a9d69cd0e424eb9aeae90a7d76ea7b9ad2f0b48568101414b5850
