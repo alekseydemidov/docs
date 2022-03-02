@@ -97,7 +97,7 @@
                     },
                     "cpu_request": {
                         "type": "string",
-                        "default": "100m",
+                        "default": "200m",
                         "form": true,
                         "render": "slider",
                         "title": "CPU Request",
@@ -110,7 +110,7 @@
                         "default": "512Mi",
                         "form": true,
                         "render": "slider",
-                        "title": "Memory Request",
+                        "title": "Memory Limit",
                         "sliderMin": 512,
                         "sliderMax": 65536,
                         "sliderUnit": "Mi"
@@ -120,7 +120,7 @@
                         "default": "500m",
                         "form": true,
                         "render": "slider",
-                        "title": "CPU Request",
+                        "title": "CPU Limit",
                         "sliderMin": 512,
                         "sliderMax": 8000,
                         "sliderUnit": "m"
